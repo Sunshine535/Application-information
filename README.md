@@ -1,2 +1,2 @@
 # Application-information
-研究所申請
+字节跳动实习申请
