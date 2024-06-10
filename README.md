@@ -1,2 +1,2 @@
 # Application-information
-实习申请
+博士班備審
