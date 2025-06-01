@@ -1,4 +1,3 @@
-```markdown
 # Dify + Xinference 部署環境設定
 
 ## 簡介
