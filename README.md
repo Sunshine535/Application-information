@@ -49,7 +49,7 @@ cd dify
 
 ### 3\. 安裝 Python 相關套件
 
-> 請確定系統已安裝 Python 3.8+ 以及 pip。  
+> 請確定系統已安裝 Python 3.12+ 以及 pip。  
 > 下列指令可在虛擬環境（virtualenv / venv）中執行，或直接安裝到全域環境。
 
 ```bash
