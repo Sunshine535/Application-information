@@ -89,19 +89,24 @@ xinference-local --host 0.0.0.0 --port 9997
         
 
 > 完成後，請點選「載入模型」或「Start」按鈕，確認模型載入成功且狀態顯示為「Ready」。
+![微信截图_20250601134557](https://github.com/user-attachments/assets/b1b69196-f703-4906-a400-cd2b0a48f3d7)
+![微信截图_20250601140146](https://github.com/user-attachments/assets/88f66b33-b379-49b5-ac42-227107757331)
+
+
 
 ### 6\. 在 Dify 中設定模型並匯入 DSL 工作流
 
-1.  打開 Dify 後端管理介面（假設在本機執行，預設為 `http://localhost:3000`，實際請依照 `.env` 中的 `DIFY_HOST`、`DIFY_PORT`）。
+1.  打開 Dify 後端管理介面（假設在本機執行，預設為 `http://localhost/app`）。
     
-2.  進入「模型管理」頁面：
+2.  進入「設定」-「模型供應商」-「安裝Xorbits Inference」-「新增模型」頁面：
     
-    *   新增一個「Xinference 模型」，填寫名稱（例如：`qwen3-8b-local`），
+    *   新增一個「Xinference 模型」，填寫名稱（例如：`qwen3-8b`，），
         
     *   設定 `endpoint` 為 `http://<你的主機 IP>:9997`、`port` 為 `9997`，並選擇剛才在 Xinference 上載入的模型名稱 `qwen3-8b`。
         
 3.  確認並儲存後，可執行「測試連線」，若一切正常應顯示「連線成功」。
-    
+    ![微信截图_20250601140346](https://github.com/user-attachments/assets/48e4cb59-290a-4387-9ffa-f480e070cd96)
+
 4.  匯入 DSL 工作流：
     
     *   在 Dify 前端介面，點選「工作流管理」→「匯入 DSL 檔案」。
@@ -137,11 +142,7 @@ streamlit run ai_final_base.py
     
 2.  **確認 Xinference 伺服器已啟動**：
     
-    ```bash
-    ps aux | grep xinference-local
-    ```
-    
-    或直接在瀏覽器打開 `http://localhost:9997/ui`，若能成功顯示 UI 即代表啟動正常。
+    *   直接在瀏覽器打開 `http://localhost:9997/ui`，若能成功顯示 UI 即代表啟動正常。
     
 3.  **Streamlit 前端使用**：
     
