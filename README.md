@@ -9,7 +9,7 @@
 - **軟體**：
   - Docker (版本 ≥ 20.10)
   - Docker Compose (版本 ≥ 1.29)
-  - Python (版本 ≥ 3.8)
+  - Python (版本 ≥ 3.12)
   - pip
 
 ## 安裝與設定步驟
